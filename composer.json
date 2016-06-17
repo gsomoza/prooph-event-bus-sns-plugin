@@ -1,0 +1,33 @@
+{
+    "name": "somoza/psb-sns-publisher",
+    "description": "Publishes PSB events to AWS SNS topics.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gabriel Somoza",
+            "email": "gabriel@somoza.me"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "aws/aws-sdk-php": "^3.18",
+        "prooph/event-store": "^6.0",
+        "container-interop/container-interop": "^1.1",
+        "beberlei/assert": "^2.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^0.9.5",
+        "phpunit/phpunit": "^5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Somoza\\PSB\\Publisher\\SNS\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SomozaTest\\PSB\\Publisher\\SNS\\": "test"
+        }
+    }
+}
